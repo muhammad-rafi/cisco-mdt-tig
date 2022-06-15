@@ -64,9 +64,11 @@ $ docker logs --tail 50 --follow --timestamps telegraf
 ```
 
 To login to the containers
+```bash
 $ docker exec -it telegraf /bin/bash
 $ docker exec -it influxdb /bin/bash
 $ docker exec -it grafana /bin/bash
+```
 
 To bring down containers
 ```bash
