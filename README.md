@@ -45,7 +45,7 @@ $ git clone https://github.com/muhammad-rafi/cisco-mdt.git
 
 Go to the cisco-mdt-tig folder and run the docker compose command in detached mode to bring the TIG stack up
 ```bash
-$ cd cisco-mdt
+$ cd cisco-mdt-tig
 $ docker-compose up -d
 ```
 
@@ -57,7 +57,7 @@ note: you may need to use 'sudo' if your docker-compose requires.
 
 Check logs for troubleshooting 
 ```bash
-sudo docker-compose logs
+$ sudo docker-compose logs
 $ docker logs --tail 50 --follow --timestamps grafana
 $ docker logs --tail 50 --follow --timestamps influxdb
 $ docker logs --tail 50 --follow --timestamps telegraf
@@ -68,7 +68,7 @@ $ docker exec -it telegraf /bin/bash
 $ docker exec -it influxdb /bin/bash
 $ docker exec -it grafana /bin/bash
 
-To bring down container
+To bring down containers
 ```bash
 $ docker-compose down
 ```
