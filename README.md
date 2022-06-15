@@ -81,7 +81,7 @@ $ docker-compose down
 
 ![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/add_influxdb_grafana_1.png)
 
-![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/add_influxdb_grafana_1.png)
+![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/add_influxdb_grafana_2.png)
 
 ### Author 
 [Muhammad Rafi](https://www.linkedin.com/in/muhammad-rafi-0a37a248/)
