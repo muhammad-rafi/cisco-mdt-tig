@@ -73,6 +73,16 @@ To bring down containers
 $ docker-compose down
 ```
 
+### Demo
+
+![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/tig_install.png)
+
+![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/grafana_login_page.png)
+
+![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/add_influxdb_grafana_1.png)
+
+![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/add_influxdb_grafana_1.png)
+
 ### Author 
 [Muhammad Rafi](https://www.linkedin.com/in/muhammad-rafi-0a37a248/)
 
