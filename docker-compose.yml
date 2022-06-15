@@ -1,0 +1,53 @@
+version: '3'
+services:
+  influxdb:
+    image: influxdb:1.8-alpine
+    container_name: influxdb
+    environment:
+      - INFLUXDB_DB=cisco_mdt
+      - INFLUXDB_ADMIN_USER=admin 
+      - INFLUXDB_ADMIN_PASSWORD=telegraf 
+    ports:
+      - "8086:8086"
+    volumes:
+      - "./influxdb_data:/var/lib/influxdb"
+    networks:
+      - tig_network
+    restart: always
+
+  telegraf:
+    image: telegraf
+    container_name: telegraf
+    ports:
+      - "57000:57000"
+    volumes:
+      - "./telegraf_data/telegraf.conf:/etc/telegraf/telegraf.conf:ro"
+    networks:
+      - tig_network 
+    depends_on:
+      - influxdb
+    links:
+      - influxdb
+    restart: always
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    user: "472"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./grafana_data:/var/lib/grafana"
+    networks:
+      - tig_network 
+    depends_on:
+      - influxdb
+    links:
+      - influxdb
+    restart: always
+
+networks:
+  tig_network:
