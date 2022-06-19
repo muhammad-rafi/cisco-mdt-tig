@@ -18,6 +18,14 @@ __Datastore__: Time series database that stores telemetry data metrics e.g. Infl
 
 __Visualisation__: A software that visualise the telemetry data in pretty format using graph e.g. Kibana, Grafana.
 
+There are two types of telemetry sessions in MDT: 
+
+__Dial-in Mode__
+In a dial-in mode, an MDT receiver dials in to the router, and subscribes dynamically to one or more sensor paths or subscriptions. The router acts as the server and the receiver is the client. The router streams telemetry data through the same session. The dial-in mode of subscriptions is dynamic. This dynamic subscription terminates when the receiver cancels the subscription or when the session terminates.
+
+__Dial-out Mode__
+In a dial-out mode, the router dials out to the receiver. This is the default mode of operation. The router acts as a client and receiver acts as a server. In this mode, sensor-paths and destinations are configured and bound together into one or more subscriptions. The router continually attempts to establish a session with each destination in the subscription, and streams data to the receiver. The dial-out mode of subscriptions is persistent. When a session terminates, the router continually attempts to re-establish a new session with the receiver every 30 seconds.
+
 There are many application stacks that can be used for the MDT and two most popular ones are TIG (Telegraf, InfluxDB and Grafana) or ELK (Elastisearch, Logstash and Kibana). 
 
 This repository is focused on TIG (Telegraf, InfluxDB and Grafana) stack. 
@@ -84,6 +92,9 @@ $ docker-compose down
 ![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/add_influxdb_grafana_1.png)
 
 ![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/add_influxdb_grafana_2.png)
+
+### Reference: 
+https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/telemetry/b-telemetry-cg-asr9000-61x/b-telemetry-cg-asr9000-61x_chapter_011.html
 
 ### Author 
 [Muhammad Rafi](https://www.linkedin.com/in/muhammad-rafi-0a37a248/)
