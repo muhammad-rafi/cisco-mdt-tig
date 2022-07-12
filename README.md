@@ -94,7 +94,13 @@ $ docker-compose down
 ![App Screenshot](https://github.com/muhammad-rafi/cisco-mdt-tig/blob/main/images/add_influxdb_grafana_2.png)
 
 ### Reference: 
-https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/telemetry/b-telemetry-cg-asr9000-61x/b-telemetry-cg-asr9000-61x_chapter_011.html
+*https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/telemetry/b-telemetry-cg-asr9000-61x/b-telemetry-cg-asr9000-61x_chapter_011.html*
+
+*https://github.com/jeremycohoe/cisco-ios-xe-mdt*
+
+*https://github.com/jeremycohoe/CLUS-DEVWKS-3270*
+
+*https://github.com/guaguila/CLive2022_DEVWKS-3240*
 
 ### Author 
 [Muhammad Rafi](https://www.linkedin.com/in/muhammad-rafi-0a37a248/)
