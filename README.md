@@ -96,28 +96,39 @@ $ docker-compose down
 ### Reference: 
 
 Programmability Configuration Guide, Cisco IOS XE Amsterdam 17.3.x
+
 *https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/173/b_173_programmability_cg/model_driven_telemetry.html*
 
 Cisco Nexus 9000 Series NX-OS Programmability Guide, Release 9.3(x)
+
 *https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0101001.html*
 
 Getting Started with Model-Driven Programmability on Cisco Nexus 9000 Series Switches White Paper
+
 *https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/white-paper-c11-741518.html#_Toc528621687*
 
 Telemetry Configuration Guide for Cisco ASR 9000 Series Routers, IOS XR Release 6.1.x
+
 *https://www.cisco.com/c/en/us/td/docs/iosxr/asr9000/telemetry/b-telemetry-cg-asr9000-61x/b-telemetry-cg-asr9000-61x_chapter_011.html*
 
-Githubs links for MDT
+Cisco IOS XR Programmability Configuration Guide for ASR 9000 Series Router
+
+*https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/data-models/guide/b-data-models-config-guide-asr9000/b-data-odels-config-guide-asr9000_chapter_01.html*
+
+__Githubs links for MDT__
+
 *https://github.com/jeremycohoe/cisco-ios-xe-mdt*
 *https://github.com/jeremycohoe/CLUS-DEVWKS-3270*
 *https://github.com/guaguila/CLive2022_DEVWKS-3240*
 
-YouTube Links 
+__YouTube Links__ 
 
 Getting started with Cisco YANG Suite
+
 *https://www.youtube.com/watch?v=smrhjL5Ayz0*
 
 NETCONF with YANG Suite
+
 *https://www.youtube.com/watch?v=dTun33611JA&t=389s*
 
 ### Author 
