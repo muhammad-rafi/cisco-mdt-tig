@@ -709,7 +709,7 @@ Telemetry subscription detail:
 cml-dist-rtr02#
 ```
 
-### Verify gRPC subscription with TLS on the IOSXE device via Telegraf
+### Verify secure gRPC subscription via Telegraf
 
 As we have seen above that gRPC with TLS connected and streaming the data which is being received by Telegraf. We can also confirm this on the Telegraf.
 
@@ -744,7 +744,7 @@ root@d7b9a0b9a476:/#
 
 Great! we are seeing the telemetry data is being received by Telegraf. 
 
-### Verify gRPC subscription with TLS on the IOSXE device via Influxdb
+### Verify secure gRPC subscription via Influxdb
 
 Let's verify it via Influxdb if it is being written in the Influxdb as well. 
 
