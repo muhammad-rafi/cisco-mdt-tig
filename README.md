@@ -57,10 +57,16 @@ $ cd cisco-mdt-tig
 $ docker-compose up -d
 ```
 
+or 
+```
+$ docker compose up -d
+```
+
 Verify the TIG stack is up and running 
 ```bash
 $ docker-compose ps -a
 ```
+
 note: you may need to use 'sudo' if your docker-compose requires.
 
 Check logs for troubleshooting 

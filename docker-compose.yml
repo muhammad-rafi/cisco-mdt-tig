@@ -20,12 +20,14 @@ services:
     restart: unless-stopped
 
   telegraf:
-    image: telegraf:1.19
+    image: telegraf:1.19.0
     container_name: telegraf
     ports:
       - "57000:57000"
+    # user: "1000"
     volumes:
-      - "./telegraf_data/telegraf.conf:/etc/telegraf/telegraf.conf:ro"
+      - "./telegraf_data/telegraf.conf:/etc/telegraf/telegraf.conf"
+      - "/var/run/docker.sock:/var/run/docker.sock"
     networks:
       - tig_network 
     depends_on:
