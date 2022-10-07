@@ -1,4 +1,4 @@
-## Secure gRPC connection with SSL/TLS on Cisco IOSXE 
+## gRPC dial-out with SSL/TLS on Cisco IOSXE 
 
 ### Create own CA (Certificate Authority) and self-signed certificate via Bash Script
 
