@@ -31,6 +31,29 @@ subscription_payload = '''
 </config>
 '''
 
+'''
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <mdt-config-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mdt-cfg">
+    <mdt-subscription>
+      <subscription-id>101</subscription-id>
+      <base>
+        <stream>yang-push</stream>
+        <encoding>encode-kvgpb</encoding>
+        <source-vrf>vrf-A</source-vrf>
+        <source-address>1.1.1.1</source-address>
+        <period>1000</period>
+        <xpath>/process-cpu-ios-xe-oper:cpu-usage/cpu-utilization/five-seconds</xpath>
+      </base>
+      <mdt-receivers>
+        <address>10.250.77.182</address>
+        <port>57000</port>
+        <protocol>grpc-tcp</protocol>
+      </mdt-receivers>
+    </mdt-subscription>
+  </mdt-config-data>
+</config>
+'''
+
 subtree_oper_filter = """
     <filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
        <mdt-oper-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-mdt-oper">
