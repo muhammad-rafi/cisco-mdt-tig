@@ -598,7 +598,7 @@ sys/procsys/syscpusummary/syscpuhistory-last60seconds,host=ubuntu-server,path=sy
 
 ## References: 
 
-[Cisco Nexus 9000 Series NX-OS Programmability Guide, Release 9.3(x)](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_011000.html)
+[Cisco Nexus 9000 Series NX-OS Programmability Guide, Release 9.3(x)](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/93x/progammability/guide/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x/b-cisco-nexus-9000-series-nx-os-programmability-guide-93x_chapter_0101001.html)
 
 [Network Automation using YANG Models across XE, XR, & NX](https://yang-prog-lab.ciscolive.com/pod/0/telemetry/consume_telemetry)
 

@@ -28,6 +28,8 @@ services:
     volumes:
       - "./telegraf_data/telegraf.conf:/etc/telegraf/telegraf.conf"
       - "/var/run/docker.sock:/var/run/docker.sock"
+      # - "./certs/server.crt:/etc/telegraf/server.crt"
+      # - "./certs/server.key:/etc/telegraf/server.key"
     networks:
       - tig_network 
     depends_on:
@@ -37,7 +39,7 @@ services:
     restart: always
 
   grafana:
-    image: grafana/grafana:8.1.0-ubuntu
+    image: grafana/grafana:8.3.10-ubuntu
     container_name: grafana
     user: "0"
     environment:
