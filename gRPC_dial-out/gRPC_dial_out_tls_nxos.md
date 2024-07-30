@@ -492,6 +492,7 @@ telemetry
     use-vrf management
   destination-group 1
     ip address 10.121.249.133 port 57000 protocol gRPC encoding GPB 
+    certificate /bootflash/ca-cert.pem 10.121.249.133 # cert only for this stream
   destination-group tig_stack
     ip address 10.121.249.133 port 57000 protocol gRPC encoding GPB 
   sensor-group 1
